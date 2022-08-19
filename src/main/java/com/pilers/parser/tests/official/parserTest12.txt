@@ -1,0 +1,7 @@
+Integer printSquare(Integer n) {
+    writeln(n * n);
+}
+
+Integer x = 1;
+Integer ignore = printSquare(x + 2);
+.

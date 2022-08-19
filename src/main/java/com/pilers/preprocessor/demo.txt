@@ -1,0 +1,29 @@
+(*
+This is a demo for the preprocessor. To see a demo of (most)
+of the actual capabilities of the compiler, see file all.txt
+*)
+
+writeln("Now testing #include...");
+writeln("Enter a number and I'll tell you if it's even!");
+#include math.txt
+Integer includeTest;
+readInteger(includeTest);
+if(isEven(includeTest)) {
+    writeln("Your number was even!");
+}
+if (!isEven(includeTest)) {
+    writeln("Your number was not even...");
+}
+writeln("");
+
+
+writeln("Now testing macros...");
+#define macro "Success!"
+#ifdef macro
+writeln( macro );
+#endif
+writeln("");
+
+
+writeln("Now testing #requestFile...");
+#requestFile https://raw.githubusercontent.com/g10ria/ATCS-Compilers-and-Interpreters/master/public/printHello.txt

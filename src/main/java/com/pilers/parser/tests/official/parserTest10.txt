@@ -1,0 +1,12 @@
+Integer f = 2;
+
+Integer bar(Integer f) {
+    writeln(f);
+}
+Integer foo(Integer d) {
+    Integer ignore = bar(d + f);
+}
+
+Integer ignore = foo(3);
+writeln(f);
+.

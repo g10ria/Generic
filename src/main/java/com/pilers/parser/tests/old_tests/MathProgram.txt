@@ -1,0 +1,27 @@
+// Calculates -(a * b mod c)
+
+WRITELN('');
+WRITELN('Math program');
+WRITELN('Enter a');
+READLN(a);
+WRITELN('Enter b');
+READLN(b);
+WRITELN('Enter c');
+READLN(c);
+WRITELN(-(a * b mod c));
+WRITELN('');
+
+(*
+Test cases:
+
+a = 3
+b = 3
+c = 2
+yields -1
+
+a = 4
+b = 23
+c = 3
+yields -2
+
+*)

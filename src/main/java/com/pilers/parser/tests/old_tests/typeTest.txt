@@ -1,0 +1,6 @@
+Integer x;
+
+
+x := 3;
+y := 'Hello'; // throws a type assignment error
+.

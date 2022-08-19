@@ -1,0 +1,7 @@
+x := 2;
+y := 'Hello';
+WRITELN(x * y);
+WRITELN(x << 1);
+WRITELN(x+1=5);
+WRITELN(!(x!=3) && x*3<5 || y='Hello');
+WRITELN('HELLO' = 'HELLO' && -3 * 2 + 5 = 17 || 3 = 2);

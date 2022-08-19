@@ -1,0 +1,19 @@
+Integer count;
+Integer ignore;
+Integer times;
+Integer printSquares(Integer low, Integer high) {
+    Integer square;
+    Integer count = low;
+    Integer times = 0;
+    while(count<=high) {
+        square = count * count;
+        writeln(square);
+        count = count + 1;
+        times = times + 1;
+    }
+}
+count = 196;
+times = 0;
+ignore = printSquares(10, 13);
+writeln(count);
+writeln(times);

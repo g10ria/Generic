@@ -1,0 +1,22 @@
+BEGIN
+    WRITELN('Combination Calculator!');
+    WRITELN('Calculate A choose B');
+
+    WRITELN('Enter A');
+    READLN(A);
+    WRITELN('Enter B');
+    READLN(B);
+    WRITELN('Calculating ' + A + ' choose ' + B);
+
+    aFactorial := 1;
+    FOR( i:= 2; i <= A; i := i+1;) aFactorial := aFactorial * i;
+
+    aMinusBFactorial := 1;
+    FOR( j:= 2; j <= A-B; j := j+1;) aMinusBFactorial := aMinusBFactorial * j;
+
+    bFactorial := 1;
+    FOR( k:=2; k <= B; k := k+1;) bFactorial := bFactorial * k;
+
+    WRITELN('Result: ' + aFactorial / aMinusBFactorial / bFactorial);
+END;
+.

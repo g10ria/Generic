@@ -1,0 +1,9 @@
+Integer countUp(Integer count, Integer max) {
+    if (count<=max) {
+        writeln(count);
+        countUp(count + 1, max);
+    }
+}
+
+Integer x = countUp(2,4);
+.
