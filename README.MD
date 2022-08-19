@@ -63,7 +63,7 @@ Boolean c = a || (b-4)==0;  // c is true
 writeln(c); // should print TRUE (or 1 in MIPS)
 ```
 
-Steps:
+# Compilation Steps
 1. The preprocessor handles macros (i.e. #include) and pipes the input program as a stream of bytes to the scanner.
 2. Lexical analysis: the scanner scans the stream of bytes into a stream of tokens - entities that store their own type (Integer, String, or Boolean), value as a string, and line number. It transfers this stream of tokens to the parser.
 3. Syntax analysis: the parser parses the stream of tokens into an abstract syntax tree (AST). It passes this tree to an environment, which acts as a manager for variable and function values. The object nature of Environments allows the creation of sub-Environments, which allows the usage of local variables inside a function that don't affect variables of the same name outside of the function. Note that the parser returns a Program object which acts as the root node ofthe AST.
